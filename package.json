@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "@mugofcoffee/photonote-website",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -12,6 +13,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.4.5"
+    "astro": "^6.4.4"
   }
 }
