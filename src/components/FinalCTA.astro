@@ -1,0 +1,40 @@
+---
+import StoreBadges from "./StoreBadges.astro";
+
+interface Props {
+  t: {
+    headingLead: string;
+    headingHighlight: string;
+    headingRest: string;
+    body: string;
+  };
+  storeBadges: any;
+}
+
+const { t, storeBadges } = Astro.props;
+---
+
+<section class="section cta-section">
+  <div class="container inner" id="download">
+    <h2>{t.headingLead} {t.headingHighlight} {t.headingRest}</h2>
+    <p>{t.body}</p>
+    <StoreBadges t={storeBadges} />
+  </div>
+</section>
+
+<style>
+  .cta-section { padding: clamp(20px, 3vw, 40px) 0; }
+  .inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .inner p {
+    color: var(--ink-soft);
+    font-size: 1.15rem;
+    margin: 0 0 8px;
+    max-width: 40ch;
+  }
+</style>

@@ -1,0 +1,105 @@
+---
+interface Props {
+  t: {
+    eyebrow: string;
+    heading: string;
+    toggles: string[];
+    hint: string;
+    meme: string;
+    visualAlt: string;
+  };
+}
+
+const { t } = Astro.props;
+const toggleStates = [true, true, true, false];
+const toggles = t.toggles.map((label, i) => ({ label, on: toggleStates[i] ?? false }));
+---
+
+<section id="customize" class="section alt">
+  <div class="container grid">
+    <div class="copy">
+      <p class="eyebrow">{t.eyebrow}</p>
+      <h2>{t.heading}</h2>
+      <ul class="toggles">
+        {toggles.map(tg => (
+          <li class={`toggle ${tg.on ? "on" : ""}`}>
+            <span class="dot"><span class="thumb"></span></span>
+            <span>{tg.label}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="hint">{t.hint}</p>
+      <p class="meme">{t.meme}</p>
+    </div>
+
+    <div class="visual">
+      <img
+        src="/img/Customization.webp"
+        alt={t.visualAlt}
+        width="2716" height="1804"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .alt { background: var(--bg-soft); }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+  .toggles {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0 22px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 14px 28px;
+  }
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--ink-soft);
+  }
+  .toggle.on { color: var(--ink); }
+  .dot {
+    width: 44px; height: 26px;
+    border-radius: 999px;
+    background: rgba(63, 31, 102, 0.18);
+    position: relative;
+    transition: background 0.2s ease;
+    flex: 0 0 auto;
+  }
+  .toggle.on .dot {
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+  }
+  .thumb {
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 20px; height: 20px;
+    border-radius: 999px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  .toggle.on .thumb { transform: translateX(18px); }
+  .hint { color: var(--ink-soft); max-width: 38ch; }
+  .meme { color: var(--ink-soft); font-size: 0.8rem; max-width: 38ch; font-style: italic;}
+  .visual { display: flex; justify-content: center; }
+  .visual img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .toggles { grid-template-columns: 1fr; }
+  }
+</style>

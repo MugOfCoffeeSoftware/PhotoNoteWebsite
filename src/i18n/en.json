@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "PhotoNote - Never forget why you took that photo",
+    "description": "PhotoNote is a simple iPhone or Android app that solves a small but annoying problem: you take a photo to remember something - and later have no idea why.\nWith PhotoNote, you add a short note directly to your photo. The note becomes part of the image, so the context is always there - when you save it, share it, or look back at it months later.\nTake a photo. Add a note. Done."
+  },
+  "header": {
+    "nav": {
+      "howItWorks": "How it works",
+      "customize": "Customize",
+      "madeFor": "Made for",
+      "download": "Download"
+    }
+  },
+  "hero": {
+    "title": "Never forget why you took that photo",
+    "lead": "You know the feeling: you scroll through your camera roll and find a photo of some random object, a sofa in a Swedish furniture store, a detail of a construction site, or something you spotted on your last trip - and you have absolutely no idea what it actually was or what you wanted to remember. PhotoNote puts an end to that.",
+    "small": "For iOS & Android",
+    "visualAlt": "Two phones and a polaroid showing the PhotoNote flow: take a photo, add a note, and save or share."
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "headingLead": "Three taps from",
+    "headingHighlight": "moment",
+    "headingRest": "to memory.",
+    "steps": [
+      { "title": "Take a photo", "body": "Open PhotoNote, hit Take Photo or pick one from your library." },
+      { "title": "Add your note", "body": "A title, a quick note, a rating - whatever you need to remember." },
+      { "title": "Off it goes!", "body": "Ready to send it, to save it, to post it - or just to never forget it!" }
+    ],
+    "closingLead": "Your note is now",
+    "closingHighlight": "a part of your photo,",
+    "closingRest": "visible wherever the photo goes."
+  },
+  "customization": {
+    "eyebrow": "Make it yours",
+    "heading": "Switch on & off — and change the style of…",
+    "toggles": [
+      "a repeating title",
+      "the note field",
+      "a rating",
+      "a border"
+    ],
+    "hint": "From simple notes to polaroids with handwritten memories - it's up to your imagination*",
+    "meme": "*as long as the app supports it",
+    "visualAlt": "Example of PhotoNote layout options: Framed, titled, rated."
+  },
+  "useCases": {
+    "eyebrow": "",
+    "headingLead": "For whoever remembers with photos:",
+    "headingHighlight": "",
+    "headingRest": "",
+    "lead": "",
+    "cases": [
+      { "title": "Tradespeople", "body": "Quick documentation on-site. Job, room, date - forever part of the photo." },
+      { "title": "Plant lovers", "body": "Label every find on the trail. Build your own little field guide." },
+      { "title": "Researchers", "body": "Instant field notes for your thesis. No more guessing which sample was which." },
+      { "title": "Travelers", "body": "Capture the moment AND the story behind it." },
+      { "title": "The forgetful", "body": "The wine you liked. The shelf number. The thing-you-want-to-remember." }
+    ]
+  },
+  "finalCta": {
+    "headingLead": "Ready to",
+    "headingHighlight": "never forget",
+    "headingRest": "?",
+    "body": "Download at:"
+  },
+  "legalNotice": {
+    "title": "PhotoNote - Legal Notice",
+    "description": "Legal notice for PhotoNote."
+  },
+  "privacyPolicy": {
+    "title": "PhotoNote - Privacy Policy",
+    "description": "How PhotoNote handles your data - short answer: we don't want it."
+  },
+  "footer": {
+    "links": {
+      "legal": "Legal Notice",
+      "privacy": "Privacy",
+      "support": "Support",
+      "contact": "Contact"
+    },
+    "socials": {
+      "youtube": "YouTube channel",
+      "company": "Mug of Coffee Software GmbH"
+    },
+    "copyright": "© {year} Mug of Coffee Software GmbH.",
+    "joke": "Made with (way) too much coffee."
+  },
+  "storeBadges": {
+    "appStoreAriaLabel": "Download on the App Store",
+    "appStoreSmall": "Download on the",
+    "appStoreName": "App Store",
+    "googlePlayAriaLabel": "Get it on Google Play",
+    "googlePlaySmall": "Get it on",
+    "googlePlayName": "Google Play"
+  }
+}

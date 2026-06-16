@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "PhotoNote - Vergiss nie, warum du dieses Foto gemacht hast",
+    "description": "PhotoNote ist eine einfache iPhone- oder Android-App, die ein kleines, aber lästiges Problem löst: Du machst ein Foto, um dich an etwas zu erinnern - und hast später keine Ahnung mehr, warum.\n\nMit PhotoNote fügst du direkt eine kurze Notiz zu deinem Foto hinzu. Die Notiz wird Teil des Bildes - der Kontext ist immer dabei, egal ob du es speicherst, teilst oder Monate später wieder anschaust.\n\nFoto machen. Notiz drunter und ab geht's."
+  },
+  "header": {
+    "nav": {
+      "howItWorks": "So funktioniert's",
+      "customize": "Anpassen",
+      "madeFor": "Gemacht für",
+      "download": "Download"
+    }
+  },
+  "hero": {
+    "title": "Vergiss nie, warum du dieses Foto gemacht hast",
+    "lead": "Du kennst das sicher: Du scrollst durch deine Fotogalerie und stößt auf ein Foto von irgendeinem Gegenstand, ein Sofa in einem schwedischen Möbelhaus, ein Detail einer Baustelle oder etwas, das dir auf deiner letzten Reise aufgefallen ist – und hast absolut keine Ahnung, warum es genau war  oder woran du dich damit erinnern wolltest. PhotoNote macht dem ein Ende.",
+    "small": "Für iOS & Android",
+    "visualAlt": "Zwei Telefone und ein Polaroid zeigen den PhotoNote-Ablauf: Foto machen, Notiz hinzufügen, speichern oder teilen."
+  },
+  "howItWorks": {
+    "eyebrow": "So funktioniert's",
+    "headingLead": "Drei Taps vom",
+    "headingHighlight": "Moment",
+    "headingRest": "zur Erinnerung.",
+    "steps": [
+      { "title": "Foto machen", "body": "Öffne PhotoNote, tippe auf Foto aufnehmen oder wähle eines aus deiner Galerie." },
+      { "title": "Notiz drunter", "body": "Ein Titel, eine kurze Notiz, eine Bewertung - was immer du dir merken willst." },
+      { "title": "Und ab geht's!", "body": "Bereit zum Schicken, Speichern, Posten - oder einfach zum Nicht-mehr-Vergessen!" }
+    ],
+    "closingLead": "Deine Notiz ist jetzt",
+    "closingHighlight": "für immer ein sichtbarer Teil deines Fotos.",
+    "closingRest": ""
+  },
+  "customization": {
+    "eyebrow": "",
+    "heading": "Ergänze und ändere den Stil...",
+    "toggles": [
+      "des sich wiederholenden Titels",
+      "des Notizfelds",
+      "der Bewertung",
+      "des Rahmens"
+    ],
+    "hint": "Von einfachen Notizen bis zu Polaroids mit handgeschriebenen Erinnerungen - Lass deiner Fantasie freien Lauf*",
+    "meme": "*so weit es die App es unterstützt",
+    "visualAlt": "Beispiele für angepasste PhotoNote-Layouts: gerahmt, betitelt, bewertet."
+  },
+  "useCases": {
+    "eyebrow": "",
+    "headingLead": "Für alle, die sich mit Fotos erinnern:",
+    "headingHighlight": "",
+    "headingRest": "",
+    "lead": "",
+    "cases": [
+      { "title": "Handwerkerinnen & Projektleiter", "body": "Schnelle Doku vor Ort. Auftrag, Raum, Datum - fest mit dem Foto verbunden." },
+      { "title": "Pflanzenliebhaber", "body": "Beschrifte jeden Fund auf dem Weg. Bau dir deinen eigenen kleinen Pflanzenführer." },
+      { "title": "Forschende", "body": "Sofortige Feldnotizen für deine Arbeit. Kein Rätselraten mehr, welche Probe welche war." },
+      { "title": "Reisende", "body": "Halte den Moment UND die Geschichte dahinter fest." },
+      { "title": "Die Vergesslichen", "body": "Der Wein, der dir geschmeckt hat. Die Regalnummer. Das Ding-das-du-dir-merken-wolltest." }
+    ]
+  },
+  "finalCta": {
+    "headingLead": "Bereit, nie wieder",
+    "headingHighlight": "etwas zu vergessen",
+    "headingRest": "?",
+    "body": "Lade die App herunter bei:"
+  },
+  "legalNotice": {
+    "title": "PhotoNote - Impressum",
+    "description": "Impressum von PhotoNote."
+  },
+  "privacyPolicy": {
+    "title": "PhotoNote - Datenschutzerklärung",
+    "description": "Wie PhotoNote mit deinen Daten umgeht - kurze Antwort: wir sind nicht an ihnen interessiert."
+  },
+  "footer": {
+    "links": {
+      "legal": "Impressum",
+      "privacy": "Datenschutz",
+      "support": "Support",
+      "contact": "Kontakt"
+    },
+    "socials": {
+      "youtube": "YouTube-Kanal",
+      "company": "Mug of Coffee Software GmbH"
+    },
+    "copyright": "© {year} Mug of Coffee Software GmbH.",
+    "joke": "Mit (viel) zu viel Kaffee gemacht."
+  },
+  "storeBadges": {
+    "appStoreAriaLabel": "Im App Store laden",
+    "appStoreSmall": "Laden im",
+    "appStoreName": "App Store",
+    "googlePlayAriaLabel": "Bei Google Play laden",
+    "googlePlaySmall": "Jetzt bei",
+    "googlePlayName": "Google Play"
+  }
+}

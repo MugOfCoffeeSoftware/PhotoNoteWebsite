@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+import { locales, type Locale } from "../i18n";
+
+interface Props {
+  lang: Locale;
+  title: string;
+  description: string;
+  path?: string;
+}
+
+const { lang, title, description, path = "" } = Astro.props;
+
+const site = Astro.site?.toString().replace(/\/$/, "") ?? "";
+const suffix = path ? `${path}` : "";
+const canonical = `${site}/${lang}/${suffix}`;
+
+const umamiSrc = import.meta.env.PUBLIC_UMAMI_SRC;
+const umamiId = import.meta.env.PUBLIC_UMAMI_ID;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/jpeg" href="/img/IconWithBorder.jpeg" />
+
+    <link rel="canonical" href={canonical} />
+    {locales.map((l) => (
+      <link rel="alternate" hreflang={l} href={`${site}/${l}/${suffix}`} />
+    ))}
+    <link rel="alternate" hreflang="x-default" href={`${site}/en/${suffix}`} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/img/IconWithBorder.jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === "de" ? "de_DE" : "en_US"} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preload" href="/fonts/protest-riot.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/SunghyunSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta name="generator" content={Astro.generator} />
+
+    {umamiSrc && umamiId && (
+      <script is:inline defer src={umamiSrc} data-website-id={umamiId}></script>
+    )}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

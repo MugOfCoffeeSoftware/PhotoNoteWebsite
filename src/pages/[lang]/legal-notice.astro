@@ -1,0 +1,35 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import LegalPage from "../../components/legal/LegalPage.astro";
+import LegalNoticeEn from "../../components/legal/LegalNoticeEn.astro";
+import LegalNoticeDe from "../../components/legal/LegalNoticeDe.astro";
+import { getTranslations, locales, type Locale } from "../../i18n";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "de" } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: Locale };
+if (!locales.includes(lang)) {
+  throw new Error(`Unknown locale: ${lang}`);
+}
+const t = getTranslations(lang);
+---
+
+<Layout
+  lang={lang}
+  title={t.legalNotice.title}
+  description={t.legalNotice.description}
+  path="legal-notice"
+>
+  <Header lang={lang} t={t.header} />
+  <LegalPage>
+    {lang === "de" ? <LegalNoticeDe /> : <LegalNoticeEn />}
+  </LegalPage>
+  <Footer lang={lang} t={t.footer} />
+</Layout>

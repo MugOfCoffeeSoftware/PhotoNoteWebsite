@@ -1,0 +1,78 @@
+---
+import StoreBadges from "./StoreBadges.astro";
+
+interface Props {
+  t: {
+    title: string;
+    lead: string;
+    small: string;
+    visualAlt: string;
+  };
+  storeBadges: Parameters<typeof StoreBadges>[0]["t"] extends infer _ ? any : any;
+}
+
+const { t, storeBadges } = Astro.props;
+---
+
+<section id="top" class="hero">
+  <div class="container grid">
+    <div class="copy">
+      <h1>
+        {t.title}
+      </h1>
+      <p class="lead">{t.lead}</p>
+      <div class="cta-row">
+        <StoreBadges t={storeBadges} />
+      </div>
+      <p class="small">{t.small}</p>
+    </div>
+
+    <div class="visual">
+      <img
+        src="/img/Hero.webp"
+        alt={t.visualAlt}
+        width="2617" height="1804"
+        fetchpriority="high"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero { padding: clamp(40px, 7vw, 90px) 0 clamp(20px, 3vw, 40px); }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 4.5vw + 0.8rem, 3.6rem);
+  }
+  .lead {
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+    max-width: 44ch;
+    margin-bottom: 28px;
+  }
+  .cta-row { margin-bottom: 14px; }
+  .small {
+    color: var(--ink-mute);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .visual {
+    display: flex;
+    justify-content: center;
+  }
+  .visual img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

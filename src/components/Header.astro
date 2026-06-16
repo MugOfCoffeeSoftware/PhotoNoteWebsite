@@ -1,0 +1,112 @@
+---
+import { locales, type Locale } from "../i18n";
+
+interface Props {
+  lang: Locale;
+  t: {
+    nav: {
+      howItWorks: string;
+      customize: string;
+      madeFor: string;
+      download: string;
+    };
+  };
+}
+
+const { lang, t } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="container row">
+    <a class="brand" href={`/${lang}/`}>
+      <img src="/img/IconWithBorder.jpeg" alt="" width="40" height="40" />
+      <span>PhotoNote</span>
+    </a>
+    <nav>
+      <a href="#how">{t.nav.howItWorks}</a>
+      <a href="#customize">{t.nav.customize}</a>
+      <a href="#made-for">{t.nav.madeFor}</a>
+      <a href="#download" class="cta">{t.nav.download}</a>
+      <div class="lang-switch" aria-label="Language">
+        {locales.map((l, i) => (
+          <>
+            {i > 0 && <span class="lang-sep">/</span>}
+            <a
+              href={`/${l}/`}
+              hreflang={l}
+              class={`lang ${l === lang ? "active" : ""}`}
+              aria-current={l === lang ? "true" : undefined}
+            >{l.toUpperCase()}</a>
+          </>
+        ))}
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(232, 223, 240, 0.85);
+    backdrop-filter: saturate(140%) blur(10px);
+    -webkit-backdrop-filter: saturate(140%) blur(10px);
+    border-bottom: 1px solid rgba(63, 31, 102, 0.08);
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    text-decoration: none; color: var(--ink);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .brand img { border-radius: 9px; box-shadow: var(--shadow-soft); }
+  nav { display: flex; gap: clamp(8px, 2vw, 24px); align-items: center; }
+  nav a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    font-weight: 500;
+    font-size: 0.98rem;
+    padding: 8px 6px;
+    transition: color 0.15s ease;
+  }
+  nav a:hover { color: var(--ink); }
+  nav a.cta {
+    color: white;
+    background: linear-gradient(135deg, var(--accent-from), var(--accent-to));
+    padding: 9px 18px;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(232, 75, 138, 0.3);
+  }
+  nav a.cta:hover { color: white; }
+  .lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .lang-switch a.lang {
+    padding: 4px 6px;
+    color: var(--ink-mute);
+  }
+  .lang-switch a.lang.active {
+    color: var(--ink);
+  }
+  .lang-sep {
+    color: var(--ink-mute);
+    opacity: 0.5;
+  }
+  @media (max-width: 640px) {
+    nav a:not(.cta):not(.lang) { display: none; }
+  }
+</style>

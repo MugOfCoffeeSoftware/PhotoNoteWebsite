@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import HowItWorks from "../../components/HowItWorks.astro";
+import Customization from "../../components/Customization.astro";
+import UseCases from "../../components/UseCases.astro";
+import FinalCTA from "../../components/FinalCTA.astro";
+import Footer from "../../components/Footer.astro";
+import { getTranslations, locales, type Locale } from "../../i18n";
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: "en" } },
+    { params: { lang: "de" } },
+  ];
+}
+
+const { lang } = Astro.params as { lang: Locale };
+if (!locales.includes(lang)) {
+  throw new Error(`Unknown locale: ${lang}`);
+}
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title={t.meta.title} description={t.meta.description}>
+  <Header lang={lang} t={t.header} />
+  <main>
+    <Hero t={t.hero} storeBadges={t.storeBadges} />
+    <HowItWorks t={t.howItWorks} />
+    <Customization t={t.customization} />
+    <UseCases t={t.useCases} lang={lang} />
+    <FinalCTA t={t.finalCta} storeBadges={t.storeBadges} />
+  </main>
+  <Footer lang={lang} t={t.footer} />
+</Layout>
