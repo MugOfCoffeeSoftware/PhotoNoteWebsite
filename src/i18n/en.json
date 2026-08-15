@@ -25,7 +25,8 @@
     "steps": [
       { "title": "Take a photo", "body": "Open PhotoNote, hit Take Photo or pick one from your library." },
       { "title": "Add your note", "body": "A title, a quick note, a rating - whatever you need to remember." },
-      { "title": "Off it goes!", "body": "Ready to send it, to save it, to post it - or just to never forget it!" }
+      { "title": "Off it goes!", "body": "Ready to send it, to save it, to post it - or just to never forget it!" },
+      { "title": "Find it again", "body": "Easily find the image again with your gallery's search function" }
     ],
     "closingLead": "Your note is now",
     "closingHighlight": "a part of your photo,",

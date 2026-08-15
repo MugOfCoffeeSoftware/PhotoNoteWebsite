@@ -25,7 +25,8 @@
     "steps": [
       { "title": "Foto machen", "body": "Öffne PhotoNote, tippe auf Foto aufnehmen oder wähle eines aus deiner Galerie." },
       { "title": "Notiz drunter", "body": "Ein Titel, eine kurze Notiz, eine Bewertung - was immer du dir merken willst." },
-      { "title": "Und ab geht's!", "body": "Bereit zum Schicken, Speichern, Posten - oder einfach zum Nicht-mehr-Vergessen!" }
+      { "title": "Ab geht's!", "body": "Bereit zum Schicken, Speichern, Posten - oder einfach zum Nicht-mehr-Vergessen!" },
+      { "title": "Find's wieder", "body": "Finde das Bild ganz einfach über die Suchfunktion deiner Galerie wieder." }
     ],
     "closingLead": "Deine Notiz ist jetzt",
     "closingHighlight": "für immer ein sichtbarer Teil deines Fotos.",
