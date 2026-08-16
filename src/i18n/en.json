@@ -59,6 +59,15 @@
       { "title": "The forgetful", "body": "The wine you liked. The shelf number. The thing-you-want-to-remember." }
     ]
   },
+  "seeItInAction": {
+    "eyebrow": "Video tutorials",
+    "heading": "See it in action",
+    "linkLabel": "Watch on YouTube",
+    "warningTitle": "You’re leaving PhotoNote",
+    "warningBody": "This link will take you to YouTube, where YouTube’s privacy policy and terms apply.",
+    "cancel": "Stay here",
+    "continue": "Continue to YouTube"
+  },
   "finalCta": {
     "headingLead": "Ready to",
     "headingHighlight": "never forget",

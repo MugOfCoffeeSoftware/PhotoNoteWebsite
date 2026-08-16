@@ -59,6 +59,15 @@
       { "title": "Die Vergesslichen", "body": "Der Wein, der dir geschmeckt hat. Die Regalnummer. Das Ding-das-du-dir-merken-wolltest." }
     ]
   },
+  "seeItInAction": {
+    "eyebrow": "Video-Anleitungen",
+    "heading": "Schau es dir in Aktion an",
+    "linkLabel": "Auf YouTube ansehen",
+    "warningTitle": "Du verlässt PhotoNote",
+    "warningBody": "Dieser Link führt dich zu YouTube. Dort gelten die Datenschutzbestimmungen und Nutzungsbedingungen von YouTube.",
+    "cancel": "Hierbleiben",
+    "continue": "Weiter zu YouTube"
+  },
   "finalCta": {
     "headingLead": "Bereit, nie wieder",
     "headingHighlight": "etwas zu vergessen",
