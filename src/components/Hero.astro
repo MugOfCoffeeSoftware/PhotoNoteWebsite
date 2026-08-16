@@ -28,12 +28,14 @@ const { t, storeBadges } = Astro.props;
     </div>
 
     <div class="visual">
-      <img
-        src="/img/Hero.webp"
-        alt={t.visualAlt}
-        width="2617" height="1804"
-        fetchpriority="high"
-      />
+      <video
+        src="/img/Website1.mp4"
+        aria-label={t.visualAlt}
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
     </div>
   </div>
 </section>
@@ -65,12 +67,15 @@ const { t, storeBadges } = Astro.props;
     display: flex;
     justify-content: center;
   }
-  .visual img {
+  .visual video {
     width: 100%;
     max-width: 560px;
+    aspect-ratio: 7 / 5;
     height: auto;
+    object-fit: cover;
     border-radius: 24px;
     box-shadow: var(--shadow);
+    display: block;
   }
   @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr; }
