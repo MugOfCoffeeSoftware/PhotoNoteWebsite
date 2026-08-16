@@ -13,7 +13,7 @@
   },
   "hero": {
     "title": "Vergiss nie, warum du dieses Foto gemacht hast",
-    "lead": "Du kennst das sicher: Du scrollst durch deine Fotogalerie und stößt auf ein Foto von irgendeinem Gegenstand, ein Sofa in einem schwedischen Möbelhaus, ein Detail einer Baustelle oder etwas, das dir auf deiner letzten Reise aufgefallen ist – und hast absolut keine Ahnung, warum es genau war  oder woran du dich damit erinnern wolltest. PhotoNote macht dem ein Ende.",
+    "lead": "Du kennst das sicher: Du scrollst durch deine Fotogalerie und stößt auf ein Foto von irgendeinem Gegenstand, ein Sofa in einem schwedischen Möbelhaus, ein Detail einer Baustelle oder etwas, das dir auf deiner letzten Reise aufgefallen ist – und hast absolut keine Ahnung, warum du es gemacht hast oder woran du dich damit erinnern wolltest. PhotoNote macht dem ein Ende.",
     "small": "Für iOS & Android",
     "visualAlt": "Zwei Telefone und ein Polaroid zeigen den PhotoNote-Ablauf: Foto machen, Notiz hinzufügen, speichern oder teilen."
   },
@@ -26,7 +26,7 @@
       { "title": "Foto machen", "body": "Öffne PhotoNote, tippe auf Foto aufnehmen oder wähle eines aus deiner Galerie." },
       { "title": "Notiz drunter", "body": "Ein Titel, eine kurze Notiz, eine Bewertung - was immer du dir merken willst." },
       { "title": "Ab geht's!", "body": "Bereit zum Schicken, Speichern, Posten - oder einfach zum Nicht-mehr-Vergessen!" },
-      { "title": "Find's wieder", "body": "Finde das Bild ganz einfach über die Suchfunktion deiner Galerie wieder." }
+      { "title": "Find's wieder", "body": "Finde das Bild ganz einfach über die Suchfunktion deiner Galerie wieder, ganz ohne die App zu öffnen." }
     ],
     "closingLead": "Deine Notiz ist jetzt",
     "closingHighlight": "für immer ein sichtbarer Teil deines Fotos.",
@@ -42,7 +42,7 @@
       "des Rahmens"
     ],
     "hint": "Von einfachen Notizen bis zu Polaroids mit handgeschriebenen Erinnerungen - Lass deiner Fantasie freien Lauf*",
-    "meme": "*so weit es die App es unterstützt",
+    "meme": "*so weit es die App unterstützt",
     "visualAlt": "Beispiele für angepasste PhotoNote-Layouts: gerahmt, betitelt, bewertet."
   },
   "useCases": {
@@ -52,7 +52,7 @@
     "headingRest": "",
     "lead": "",
     "cases": [
-      { "title": "Handwerkerinnen & Projektleiter", "body": "Schnelle Doku vor Ort. Auftrag, Raum, Datum - fest mit dem Foto verbunden." },
+      { "title": "Handwerkerinnen & Projektleiter", "body": "Schnelle Doku vor Ort. Auftrag, Raum, Datum - fest mit dem Foto verbunden und sofort wiedergefunden." },
       { "title": "Pflanzenliebhaber", "body": "Beschrifte jeden Fund auf dem Weg. Bau dir deinen eigenen kleinen Pflanzenführer." },
       { "title": "Forschende", "body": "Sofortige Feldnotizen für deine Arbeit. Kein Rätselraten mehr, welche Probe welche war." },
       { "title": "Reisende", "body": "Halte den Moment UND die Geschichte dahinter fest." },
