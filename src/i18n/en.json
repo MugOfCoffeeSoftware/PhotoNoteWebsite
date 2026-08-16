@@ -26,7 +26,7 @@
       { "title": "Take a photo", "body": "Open PhotoNote, hit Take Photo or pick one from your library." },
       { "title": "Add your note", "body": "A title, a quick note, a rating - whatever you need to remember." },
       { "title": "Off it goes!", "body": "Ready to send it, to save it, to post it - or just to never forget it!" },
-      { "title": "Find it again", "body": "Easily find the image again with your gallery's search function" }
+      { "title": "Find it again", "body": "Easily find the image again with your gallery's search function without opening the app." }
     ],
     "closingLead": "Your note is now",
     "closingHighlight": "a part of your photo,",
@@ -52,7 +52,7 @@
     "headingRest": "",
     "lead": "",
     "cases": [
-      { "title": "Tradespeople", "body": "Quick documentation on-site. Job, room, date - forever part of the photo." },
+      { "title": "Tradespeople", "body": "Quick documentation on-site. Job, room, date - forever part of the photo and easily found again." },
       { "title": "Plant lovers", "body": "Label every find on the trail. Build your own little field guide." },
       { "title": "Researchers", "body": "Instant field notes for your thesis. No more guessing which sample was which." },
       { "title": "Travelers", "body": "Capture the moment AND the story behind it." },
